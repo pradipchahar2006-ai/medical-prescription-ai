@@ -1,0 +1,13 @@
+Local development startup notes
+
+Read README.md for prerequisites, environment setup, dependency installation,
+and full run instructions.
+
+Start MongoDB, then open three terminals from the project root:
+
+1. AI service: cd ai-server; activate its .venv (.\venv\Scripts\Activate.ps1); python ai_server.py
+2. API: cd server; node server.js
+3. Frontend: cd client; npm run dev
+
+Configure server/.env and ai-server/.env from their .env.example files.
+Never put API keys or other secrets in this file or commit local .env files.
